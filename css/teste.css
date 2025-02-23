@@ -1,0 +1,541 @@
+
+/*
+body{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+*/
+/*  LOGO DA EMPRESA*/
+
+.logo2{
+    position:relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*  BARRA DE NAVEGAÇÃO COM DOWNDRROP */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #333;
+    text-align: center;
+    position: relative; 
+}
+nav ul{
+    display: inline-flex;
+    list-style: none;
+}
+nav ul li{
+
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    position: relative;                                   
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family:
+}
+.sub-menu-1{
+     display: none;   
+}
+nav ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background-color: #333;
+  top: 80%; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  margin-top: 10px; 
+  width: 200px; 
+}
+nav ul li:hover .sub-menu-1 ul{
+    display: block;
+}
+nav ul li:hover .sub-menu-1 ul li{
+    width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.7s
+}
+nav ul li:hover .sub-menu-1 ul li:hover{
+    background-color: red;
+}
+
+/*       CARRINHO BARRA DE NAVEGACAO     */
+
+.cart-button {
+  position: absolute; /* Adicionado */
+  right: -23%; /* Adicionado */
+  top: 35%; /* Adicionado */
+  transform: translateY(-50%); /* Adicionado */     
+}
+
+
+
+/*     FRASE ESCOLHA SUA CATEGORIA    */
+.categoria h2{
+
+    /*position: relative;*/
+    text-align: center;
+    /*font-family:'Courier New', Courier, monospace;
+    font-weight: 550;*/
+
+}
+
+
+
+/*     IMAGENS COM AS CATEGORIAS      */
+
+
+div.gallery { 
+    position: relative;
+     margin: 5px;
+
+     float: right;
+     width: 27%; 
+     right: 8.7%;
+   }
+   div.gallery:hover {
+     border: 1px solid white;
+     border-radius: 10px;
+   }
+   div.gallery img {
+     width: 100%;
+     height: auto;
+     border-radius: 10px;
+   }
+   div.desc {
+     padding: 15px;
+     text-align: center;
+     color: red;
+     font-size: 18px;
+   }
+ 
+ 
+   
+
+/*            FOOTER             */
+
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+
+   display: flex;
+   flex-wrap: wrap;
+}
+ul{
+   list-style: none;
+}
+.footer{
+  position: relative;
+   background-color: #333;
+   padding: 2% 0;
+   margin-top: 50%;
+}
+
+
+.footer-col{
+   width: 25%;
+   padding: 0 6.5%;
+}
+.footer-col h4{
+   font-size: 18px;
+   color: #fff;
+   text-transform: capitalize;
+   margin-bottom: 35px;
+   font-weight: 500;
+   position:relative;
+}
+.footer-col h4::before{
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: -10px;
+   background-color: red;
+   height: 3px;
+   box-sizing: border-box;
+   width: 50px;  
+}
+.footer-col ul li:not(:last-child){
+   margin-bottom: 10px;
+}
+.footer-col ul li a{
+   font-size: 16px;
+   text-transform: capitalize;
+   color:#fff;
+   text-decoration: none;
+   font-weight: 300;
+   color: #bbb;
+   display: block;
+   transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+   color: #fff;
+   padding-left: 10px; 
+}
+.livro{
+  position: absolute;
+  width: 8%;
+  top: 55%;
+  right: 11%;
+}
+ 
+.company {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: red;
+  text-align: center;
+}
+.socialimg{
+  width: 18%;
+}
+
+.footer:before {
+  content: "";
+  display: table;
+}
+
+.footer:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/*         FOOTER TRAVAGEM       */
+
+
+.footerTravagem{
+position: relative;
+ background-color: #333;
+ padding: 1% 0;
+ /*margin-top: 50%;*/
+ min-height: calc(100vh - [altura do último objeto]);
+}
+
+  /*          FOOTER Politica         */
+.footerPolitica{
+  position: relative;
+   background-color: #333;
+   padding: 1% 0;
+   margin-top: 85%;
+  }
+
+/*      diminuição de tela      */
+@media(max-width: 767px){
+   .footer-col{
+      width: 50px;
+      margin-bottom: 30px;
+   }
+}
+
+@media(max-width: 574px){
+   .footer-col{
+      width: 150px;
+      margin-bottom: 30px;
+   }
+}
+
+/* pagina empresa*/
+
+.empresa{
+    position: relative;
+    right: -5%;
+    margin-top: 35px;
+    width: 88%;
+    height: 400px;
+}
+.page{
+  color: red;
+}
+.termos{
+  position: relative;
+  right: -5%;
+  margin-top: 35px;
+  width: 88%;
+  height: 400px;
+}
+
+
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: absolute;
+  z-index: 1;
+  top: 35.5%;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 20%;
+  color:#ff0000;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*          Catalgo          */
+
+section .catalogo{
+  width: 100vw;
+  padding: 100px;
+}
+
+section .card-wrapper{
+  max-width: 1000px;
+  height:  100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px,  1fr));
+  grid-gap: 30px;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+section .card-item{
+  height: 400px;
+  background: #c4c4c4;  
+  border-radius: 8px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.card-content{
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+.card-item img{
+  max-height: 60%;
+  max-width: 85%; 
+  object-fit: contain; 
+
+}
+.card-item h4{
+  width: 90%;
+}
+.card-item p{
+  width: 90%;
+  font-family: italic;
+  font-size: 120%;
+  text-align: center;
+}
+.card-item .custom-link {
+ 
+    display: block;
+    width: 200px; 
+    height: 50px; 
+    padding: 14px 0;
+    border: none;
+    background-color: red;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    align-self: center;
+      
+}
+
+  /*          Descrição produtos        */
+  /*.right-side-menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.icon-avatar img{
+  width: 1px;
+  background-color: #ddd;
+  width: 90%;
+  align-self: center;
+}*/
+
+.container{
+  /*position: absolute;*/
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 25%);
+  gap: 100px;
+
+}
+.left-side{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.objeto{
+  align-self: flex-end;
+}
+.image{
+  max-width: 400px;
+  
+}
+.image img{
+  width: 100%;
+  border-radius: 10px;
+  background: #c4c4c4; 
+}
+.thumbnails{
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 60%;
+  gap: 10px;
+  
+}
+.thumbnail img{
+  width: 100%;
+  border-radius: 10px;
+  background: #4d4d4d; 
+}
+.lado-direito{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.des-content{
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.lado-direito h6{
+  color:#ff0000;
+}
+.lado-direito p{
+  font-size: 14px; 
+}
+.preco{
+  font-size: 16px;
+  font-weight: 700;
+}
+.opcao{
+  display: flex;
+  gap: 20px;
+}
+.quantia{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color:#818181 ;
+  padding: 10px 15px;
+  width: fit-content;
+  border-radius: 10px;
+}
+.quantia span{
+  font-weight: 700;
+  font-size:  15px;
+}    
+.menos, .mais{
+  cursor: pointer;
+}                 
+.button{
+  display: inline-block;
+  text-decoration: none;
+  color:#ff0000;
+  background-color: #818181;
+  padding: 10px 25px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.button img{
+  width: 30px;
+}
+
+
+/*            Contactos           */
+.contact-form {
+  text-align: left;
+
+}
+
+.contact-form .form-group {
+  text-align: left;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .btn {
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form .btn:hover {
+  background-color: #cc0000;
+}
+
+
+
+/*      PÁGINA DO CARRINHO       */
+
+
+
+
+
+ /*  
+    2 - METER FONTE E ALTERAR TAMANHO DAS LETRAS 
+    3 - LOOP DE IMAGENS MAIS SUAVE
+    */
+
+
+
+
+
+
+
+
+
+
+
+
+
